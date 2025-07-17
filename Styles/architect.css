@@ -241,7 +241,7 @@ main{
     filter: grayscale(100%);
 }
 
-/* Responsive */
+/* Responsive Section */
 
 @media screen and (max-width: 576px) {
     .navbar, .nav-link , .ar-features{
@@ -276,7 +276,6 @@ main{
         margin-top: 20px;
         margin-left: 20px;
     }
-
 }
 
 /* Medium Size Device */
