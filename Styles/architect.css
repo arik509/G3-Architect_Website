@@ -148,6 +148,46 @@ main{
     line-height: 26px;
 }
 
+/* Feature Section */
+.ar-features{
+    display: flex;
+    gap: 140px;
+}
+
+#ar-features-title{
+    margin-top: 0;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.ar-feature-card{
+    padding: 30px 30px 10px 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.ar-feature-card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #131313;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#ex-btn{
+    padding: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#jumbo{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
 /* Fact Section */
 
 .fact{
@@ -204,7 +244,7 @@ main{
 /* Responsive */
 
 @media screen and (max-width: 576px) {
-    .navbar, .nav-link{
+    .navbar, .nav-link , .ar-features{
         flex-direction: column;
     } 
     
@@ -228,12 +268,21 @@ main{
         justify-items: center;
     }
 
+    .feature-architect{
+        width: 100%;
+    }
+
+    #ex-btn{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
 }
 
 /* Medium Size Device */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams, .ar-features{
         flex-direction: column;
     }
     .features{
@@ -244,6 +293,11 @@ main{
         grid-template-columns: repeat(2,1fr);
         gap: 50px;
         justify-items: center;
+    }
+
+    #ex-btn{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
 }
